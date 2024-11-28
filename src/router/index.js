@@ -1,12 +1,12 @@
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHashHistory } from 'vue-router';
 import Hotels from '../views/Hotels.vue';
 
 const routes = [
-  { path: '/decameron-frontend.github.io/hotels', name: 'Hotels', component: Hotels },
+  { path: '/hotels', name: 'Hotels', component: Hotels },
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes,
 });
 
